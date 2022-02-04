@@ -1,14 +1,16 @@
 function findVowels(str)//"My Old name is Tasneem"
 {
-   var foundVowels = "";
+   let foundVowels = "";
   
-   var VOWELS = "aeiouAEIOU";
+   let VOWELS = "aeiouAEIOU";
 
     for (let i = 0; i < str.length; i++)
     {
         if (VOWELS.includes(str[i]))
         {
-          foundVowels += str[i]  + ",";
+          if(!foundVowels.includes(str[i])){
+            foundVowels += str[i]  + ",";
+          }
         }
     }
     foundVowels = "Vowels: " + foundVowels; 
@@ -16,5 +18,5 @@ function findVowels(str)//"My Old name is Tasneem"
 
    
 }
-findVowels("My Old name is Tasneem");
+
 

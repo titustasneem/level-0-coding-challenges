@@ -1,12 +1,15 @@
 function findCommonCharacters(str1, str2)
 {
-    var foundCharacters = "";
+    let foundCharacters = "";
 
     for (let i = 0; i < str1.length; i++)
  {
     if (str2.includes(str1[i]))
-    {
-     foundCharacters += str1[i] + ",";
+    {  
+      if (!foundCharacters.includes(str1[i])){
+      foundCharacters += str1[i] + ",";
+    }
+     
     }
 
  } 
@@ -19,4 +22,3 @@ function findCommonCharacters(str1, str2)
  foundCharacters = "Common letters: " + foundCharacters;
  console.log(foundCharacters);
 } 
-findCommonCharacters("Tasneem", "Titus");

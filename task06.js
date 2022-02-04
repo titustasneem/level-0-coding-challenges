@@ -1,6 +1,6 @@
 function maximum(num1, num2, num3)
 {
-  var max = -999;
+  let max = -Infinity;
 
   if (num1 > max)
   {
@@ -20,7 +20,3 @@ function maximum(num1, num2, num3)
 
 }
 
-console.log(maximum(12, 354, 8));
-console.log(maximum(1011, 19, 8));
-console.log(maximum(12, 35, 8000));
-console.log(maximum(12, 354, -999));
