@@ -1,6 +1,7 @@
 function findVowels(str)//"My Old name is Tasneem"
 {
    let foundVowels = "";
+   str  = str.toLowerCase();
   
    let VOWELS = "aeiouAEIOU";
 
@@ -19,4 +20,4 @@ function findVowels(str)//"My Old name is Tasneem"
    
 }
 
-
+findVowels("UmzIU");
