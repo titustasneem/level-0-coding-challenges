@@ -1,7 +1,7 @@
 function findVowels(str)//"My Old name is Tasneem"
 {
    var foundVowels = "";
-  // var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  
    var VOWELS = "aeiouAEIOU";
 
     for (let i = 0; i < str.length; i++)
